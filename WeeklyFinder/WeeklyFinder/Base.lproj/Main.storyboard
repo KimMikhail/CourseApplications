@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeeklyFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLM-z6-KbX">
+                                <rect key="frame" x="118.5" y="141" width="177" height="40.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="aar-6V-50E">
+                                <rect key="frame" x="20" y="293" width="349.5" height="125"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iq8-GA-HGR">
+                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="125"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJJ-85-yhq">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="42"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnI-X9-oM9">
+                                                <rect key="frame" x="0.0" y="62" width="44.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRY-cT-dj0">
+                                                <rect key="frame" x="0.0" y="103.5" width="44.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-cd-FQK">
+                                        <rect key="frame" x="85.5" y="0.0" width="264" height="125"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-Vj-sDP">
+                                                <rect key="frame" x="0.0" y="0.0" width="264" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="264" id="sXj-NG-R3e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01m-F4-7oe">
+                                                <rect key="frame" x="0.0" y="49" width="264" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="264" id="ech-2E-CpO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2P-hn-jMn">
+                                                <rect key="frame" x="0.0" y="91" width="264" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="264" id="YKg-6w-jar"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-kG-WYa">
+                                <rect key="frame" x="161" y="610" width="92" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="OOI-cP-qkd"/>
+                                </constraints>
+                                <state key="normal" title="Find Day">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="findDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FWj-Fw-hIB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llD-5N-ZX0">
+                                <rect key="frame" x="127" y="485" width="160" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Crn-9u-hWy"/>
+                                    <constraint firstAttribute="height" constant="42" id="Yvq-UI-n7P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QLM-z6-KbX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6pt-2n-jwx"/>
+                            <constraint firstItem="aar-6V-50E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7JU-04-DcV"/>
+                            <constraint firstItem="llD-5N-ZX0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="Oqm-I6-0M1"/>
+                            <constraint firstItem="aar-6V-50E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="Peo-IP-x2q"/>
+                            <constraint firstItem="llD-5N-ZX0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pp5-5y-KfW"/>
+                            <constraint firstItem="llD-5N-ZX0" firstAttribute="top" secondItem="aar-6V-50E" secondAttribute="bottom" constant="67" id="QRK-Rj-wnS"/>
+                            <constraint firstItem="gsY-kG-WYa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T7Y-EU-nlL"/>
+                            <constraint firstItem="gsY-kG-WYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="du8-zZ-m72"/>
+                            <constraint firstItem="gsY-kG-WYa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="566" id="sfi-Yg-OEk"/>
+                            <constraint firstItem="QLM-z6-KbX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="wYE-zy-hbC"/>
+                            <constraint firstItem="llD-5N-ZX0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="441" id="zXN-Sv-zdb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dayTF" destination="vHv-Vj-sDP" id="IBT-NI-Rbg"/>
+                        <outlet property="monthTF" destination="01m-F4-7oe" id="8y6-Tk-mYt"/>
+                        <outlet property="resultLabel" destination="llD-5N-ZX0" id="OHq-NF-gyY"/>
+                        <outlet property="yearTF" destination="B2P-hn-jMn" id="UK3-9i-0E6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
